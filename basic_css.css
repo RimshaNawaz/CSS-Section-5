@@ -1,0 +1,565 @@
+
+/* 01. Comments
+----------------
+
+/*===========================================================================================================================================*/
+
+
+/*   02. Where to Insert CSS
+-----------------------------
+
+Three Ways to Insert CSS
+
+  1. External CSS - With an external style sheet, you can change the look of an entire website by changing just one file.
+  Each HTML page must include a reference to external style sheet file inside the <link> element, inside the head section.
+
+  2. Internal CSS - An internal style sheet may be used if one single HTML page has a unique style.
+  The internal style is defined inside the <style> element, inside the head section.
+
+  3. Inline CSS - An inline style may be used to apply a unique style for a single element.
+  To use inline styles, add the style attribute to relevant element.  The style attribute can contain any CSS property. */
+
+/*===========================================================================================================================================*/
+
+/* 03. Syntax */
+
+/* The selector points to the HTML element you want to style.
+The declaration block contains one or more declarations separated by semicolons.
+Each declaration includes a CSS property name and a value, separated by a colon.
+Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.*/
+
+  /* h1 {
+    color: blue;
+    font-size: 12px;
+  } */
+
+/*===========================================================================================================================================*/
+
+
+
+/* 04. Selectors*/
+p{
+    color: blue;
+}
+#paragraphid{
+    color: brown;
+    background-color: aqua;
+}
+.classstyle{
+    color: palevioletred;
+    background-color:bisque;
+}
+/*===========================================================================================================================================*/
+
+
+/* 05. Colors*/
+h1#color1{
+  color: red;
+}
+h1#color2{
+    color: papayawhip;
+  }
+  h1#color3{
+    color:yellow;
+  }
+  h1#color4{
+    color: turquoise;
+  }h1#rgb{
+    color: rgb(102, 102, 231);
+  }h1#hex{
+    color: #909000;
+  }
+  h1#hsl{
+    color: hsl(150, 50%, 40%);
+  }
+
+/*===========================================================================================================================================*/
+
+
+/* 06. Backgrounds*/
+
+#background{
+   color: white;
+    background-color: brown;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed ;
+    background-image: url("");
+   
+}
+
+/*===========================================================================================================================================*/
+
+
+/* 07. Borders*/
+#borders1{
+    border: 3px solid red;
+}
+#borders2{
+    border: 3px dotted black;
+}
+#borders3{
+    border: 3px dashed pink;
+}
+
+#borders4{
+    border: 3px double blue;
+}#borders5{
+    border-style:ridge;
+}
+#borders6{
+    border-style:groove;
+}
+#borders7{
+    border-style:outset;
+}#borders8{
+    border-style:hidden;
+}#borders9{
+    border-style:inset;
+}
+
+
+
+
+
+/*===========================================================================================================================================*/
+
+
+/* 08. Margins*/
+.margin{
+
+ margin-top: 10px;
+ margin-bottom: 10px;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+
+  
+
+
+/*===========================================================================================================================================*/
+
+
+/* 09. Padding*/
+.padding{
+ padding-left:40px;
+ padding-top:5px;
+ padding-right:5px;
+ padding-bottom:5px;
+ border: 2px solid red;
+}
+
+
+
+/*===========================================================================================================================================*/
+
+
+/* 10. Height and Width
+-------------------
+
+    The CSS height and width properties are used to set the height and width of an element.
+
+    The CSS max-width property is used to set the maximum witdh of an element.
+
+    The height and width properties do not include padding, borders, or margins.  It sets the height/width of the area inside the
+    padding, border, and margin of the element.
+
+    The height and width properties may have the following values:
+
+    auto - This is default.  The browser calculates the height and width.
+
+    length - Defines the height/width in px, cm.
+
+    % - Defines the height/width in percent of the containing block.
+
+    initial - Sets the height/width to its default value.
+
+    inherit - The height/width will be inherited from its parent value. */
+
+
+
+/*===========================================================================================================================================*/
+
+
+/* 11. Box Model*/
+.boxmodel{
+    height: 40px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid rebeccapurple;
+}
+
+   
+
+
+
+/*===========================================================================================================================================*/
+
+
+/* 12. Outline*/
+.outline1{
+    outline-style: dashed;
+}
+.outline2{
+    outline-style: dotted;
+}
+
+
+/*===========================================================================================================================================*/
+
+
+/* 13. Text*/
+#text1{
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+    text-transform:capitalize;
+}
+
+
+/*===========================================================================================================================================*/
+
+
+  /* 14. Fonts*/
+  #fonts{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+ 
+/*===========================================================================================================================================*/
+
+
+/* 15. Icons*/
+
+   .material-icons{
+    color: red;}
+
+
+
+
+/*===========================================================================================================================================*/
+
+
+/* 16. Links*/
+a:hover{
+ color: red;
+}a:visited{
+    color: green;
+}
+a:active{
+    color: yellow;
+}
+
+/*===========================================================================================================================================*/
+
+
+/* 17. Lists*/
+ul{
+    list-style-type:lower-roman;
+   
+}
+ol{
+    list-style-type: lower-alpha;
+}
+/*===========================================================================================================================================*/
+
+
+/* 18. Tables*/
+table,tr,td{
+    border: 2px solid red;
+    width: 100%;
+    height: 20px;
+}
+
+
+/*===========================================================================================================================================*/
+
+
+/* 19. Display*/
+li.display{
+    display: inline;
+}
+/*===========================================================================================================================================*/
+
+
+/* 20. Max-Width*/
+.max{
+    margin:auto;
+    width: 20px;
+    height: 50px;
+    border: 10px solid red;
+}
+
+/*===========================================================================================================================================*/
+
+
+/* 21. Position*/
+.static{
+    position: static;
+    top: 20px;
+    left: 10px;
+    height: 100px;
+    width: 200px;
+    border: 5px solid pink;
+    background-color: blueviolet;
+}
+.absolute{
+    position: absolute;
+    top: 140px;
+    left: 590px;
+    height: 100px;
+    width: 200px;
+    border: 5px solid blue;
+    background-color: chartreuse;
+}
+.relative{
+    position:relative;
+    top: 30px;
+    left: 30px;
+    height: 100px;
+    width: 200px;
+    border: 5px solid orange;
+    background-color: aqua;
+}
+.fixed{
+    position:fixed;
+    top: 20px;
+    left: 300px;
+    height: 100px;
+    width: 200px;
+    border: 5px solid gray;
+    background-color:cadetblue;
+}.sticky{
+    position:sticky;
+    top: 0px;
+    left: 600px;
+    height: 100px;
+    width: 200px;
+    border: 5px solid red;
+    background-color: burlywood;
+}
+/*===========================================================================================================================================*/
+
+
+/* 22. Overflow
+-------------------
+
+    The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big
+    to fit in the specified area.
+
+    The overflow property has the following values:
+
+    visible - Default The overflow is not clipped.  The content renders outside the elements box.
+
+    hidden - The overflow is clipped and the rest of content will be invisible.
+
+    scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content. */
+
+/*===========================================================================================================================================*/
+
+
+/* 23. Float*/
+.div1{
+    height: 100px;
+    width: 200px;
+    border: 5px solid blue;
+    background-color: yellow;
+    float: right;
+}
+.div2{
+    height: 100px;
+    width: 200px;
+    border: 5px solid  olive;
+    background-color: forestgreen;
+    float: left;
+}
+
+
+/*===========================================================================================================================================*/
+
+
+/* 24. Inline-Block*/
+
+   .a{
+    border: 3px solid yellow;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    background-color:blue;
+   }
+
+/*===========================================================================================================================================*/
+
+
+/* 25. Align*/
+
+.center{
+    border: 3px solid hotpink;
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+    background-color: azure;
+ margin:auto;
+   }
+    
+
+/*===========================================================================================================================================*/
+
+
+/* 26. Combinators*/
+div >p{
+    background-color: blueviolet;
+}
+div+p{
+    background-color: burlywood;
+}
+div~p{
+    background-color:grey;
+}
+/*===========================================================================================================================================*/
+
+
+/* 27. Pseudo Class
+-------------------
+
+    Pseudo-classes can be combined with CSS classes. */
+
+/*===========================================================================================================================================*/
+
+
+/* 28. Pseudo element
+-------------------
+
+    A CSS pseudo-element is used to style specified parts of an element. */
+
+
+/*===========================================================================================================================================*/
+
+
+/* 29. Opacity*/
+#pic:hover{
+    opacity: 1;
+}
+
+/*===========================================================================================================================================*/
+
+
+/* 30. Navigation Bar*/
+ul li{
+    display: inline;
+    color: brown;}
+
+
+/*===========================================================================================================================================*/
+
+
+/* 31. Dropdowns
+-------------------
+
+    Use CSS to create a dropdown */
+
+/*===========================================================================================================================================*/
+
+
+/* 32. Image Gallery
+-------------------
+
+    CSS can be used to create an image gallery */
+
+/*===========================================================================================================================================*/
+
+
+/* 33. Image Sprites
+-------------------
+
+    An image sprice is a collection of images put into a single image.
+
+    A web page with many images can take a long time to load and generates multiple server requests.
+
+    Using image sprice will reduce the number of server requests and save bandwidth. */
+
+/*===========================================================================================================================================*/
+
+
+/* 34. Attr Selectors
+-------------------
+
+    The [attribute] selector is used to select elements with a specified attribute. */
+
+/*===========================================================================================================================================*/
+
+
+/* 35. Forms
+-------------------
+
+    You can style Forms with CSS */
+
+/*===========================================================================================================================================*/
+
+
+/* 36. Counters
+-------------------
+
+    CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules.
+    Counters let you adjust the appearance of content based on its placement in the document. */
+
+
+/*===========================================================================================================================================*/
+
+
+/* 37. Website Layout
+-------------------
+
+    A website is often divided into headers, menus, content and a footer.
+
+    Header - A header is usually located at the top of the website.
+
+    Navigation Bar - A navigation bar contains a  list of links to help visitors navigating through your website.
+
+    Check Project Files for Website Layout Example. */
+
+/*===========================================================================================================================================*/
+
+
+/* 38. Units
+-------------------
+
+    CSS has serveral different units for expressing a length.
+
+    Many CSS properties take "length" values, such as width, margin, padding, font-size
+
+    Length is a number followed by a length unit, such as 10px, 2em. */
+
+
+/*===========================================================================================================================================*/
+
+
+/* 39. Specificity
+-------------------
+
+    If there are two or more conflicting CSS rules that point to the same element, the browser follows some rule to determine
+    which one is most specific and therefore wins out.
+
+    Think of specificity as a score/rank that determines which style declarations are ultimately applied to an element.
+
+    The universal selector (*) has low specificity, while ID selectors are highly specific!
+
+    Every selector has its place in the specificity hierarchy.  There are four categories which define the specificity level of a selector:
+
+    Inline Styles - An inline style is attached directly to the element to be styled.
+
+    IDs - An ID is a unique identifier for the page elements, such as #navbar.
+
+    Classes, attributes and pseudo-classes - This category includes .classes, [attributes] and pseudo-classes such as :hover, :focus
+
+    Elements and pseudo-elements - This category includes element names and pseudo-elements, such as h1, div, :before and :after. */
+
+/*===========================================================================================================================================*/
+
+
+/* 40. !important*/
+#RIM{
+    background-color: red;
+    background-color: aquamarine!important;
+}
